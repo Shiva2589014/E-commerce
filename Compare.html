@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Compare Products</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./mediastyle.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <style>
+    /* Page Styling */
+    * {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Compareheader */
+    .Compareheader {
+      background-color: lightgray;
+      padding: 15px 30px;
+      font-size: 13px;
+      color: rgb(100, 100, 100);
+    }
+    .Compareheader a {
+      color: rgb(100, 100, 100);
+      text-decoration: none;
+    }
+
+    /* Comparison Table */
+    .compareContainer {
+      margin: 65px;
+      width: 90%;
+    }
+
+    table {
+      width: 100%;
+
+      border-collapse: collapse;
+    }
+
+    th {
+      color: gray;
+      border: 1px solid rgb(230, 230, 230);
+      padding: 10px;
+      text-align: center;
+      font-size: 14px;
+    }
+    td {
+      border: 1px solid rgb(230, 230, 230);
+      padding: 10px;
+      text-align: center;
+      font-size: 14px;
+      opacity: 0.8;
+    }
+
+    th img {
+      width: 310px;
+      height: 310px;
+    }
+
+    /* Product Name */
+    .productName {
+      font-weight: bold;
+      color: rgb(0, 105, 92);
+      font-weight: bold;
+    }
+
+    .colorOptions .color {
+      display: inline-block;
+      gap: 10px;
+    }
+    .color {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+    }
+
+    .red {
+      background-color: red;
+    }
+    .yellow {
+      background-color: yellow;
+    }
+    .orange {
+      background-color: orange;
+    }
+
+    /* Out of Stock */
+    .outStock {
+      color: rgb(0, 150, 136);
+    }
+
+    /* Add to Cart Button */
+    .cartBtn {
+      background-color: rgb(0, 105, 92);
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    /* Trash Icon */
+    img {
+      cursor: pointer;
+    }
+  </style>
+  <body>
+
+
+
+    <header class="header">
+      <img
+        src="./Assets/Pictures/logo.png"
+        alt="LogoOfAchieversIt"
+        class="header-logo"
+      />
+      <nav class="navbar">
+      
+        
+        <a href="./index.html">Home</a>
+        <a href="./shop.html">Shop</a>
+        <a href="http://127.0.0.1:5500/Account.html">My<br />Account</a>
+        <a href="http://127.0.0.1:5500/Compare.html">Compare</a>
+        <a href="http://127.0.0.1:5500/login.html">Login</a>
+        </nav>
+      
+        <div class="searchAndIcons">
+      
+        <div class="header-icons">
+          <form action="/search" method="get">
+            <label for="search"></label >
+            <input
+              type="text"
+              placeholder="Search for items...."
+              class="search-input"
+            />
+      
+            <div class="searchlable">
+              <img src="./Assets/Pictures/search.png" alt="" />
+            </div>
+          </form>
+          
+      
+          <img src="./Assets/Pictures/icon-heart.svg" alt="Wishlist" />
+          <div class="headericons">3</div>
+          <img src="./Assets/Pictures/icon-cart.svg" alt="Cart" />
+          <div class="headericons1">3</div>
+        </div>
+        
+        </div>
+        
+      
+      </header>
+      
+    
+    <!-- Compareheader Navigation -->
+    <div class="Compareheader">
+      <a href=""  style="margin-left: 40px;">Home</a> &gt; <span>Shop</span> &gt; <span>Compare</span>
+    </div>
+
+    <!-- Comparison Table -->
+    <div class="compareContainer">
+      <table>
+        <tr>
+          <th>Image</th>
+          <th>
+            <img src="./Assets/product-2-1.jpg" alt="Plain Striola Shirts" />
+          </th>
+          <th><img src="./Assets/product-4-1.jpg" alt="Chen Cardigan" /></th>
+          <th><img src="./Assets/product-7-1.jpg" alt="Henley Shirt" /></th>
+        </tr>
+        <tr>
+          <th>Name</th>
+          <td class="productName">Plain Striola Shirts</td>
+          <td class="productName">Chen Cardigan</td>
+          <td class="productName">Henley Shirt</td>
+        </tr>
+        <tr>
+          <th>Price</th>
+          <td>$35</td>
+          <td>$67</td>
+          <td>$24</td>
+        </tr>
+        <tr>
+          <th>Description</th>
+          <td>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+            perferendis nam, fuga reiciendis libero doloremque distinctio.
+          </td>
+          <td>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+            perferendis nam, fuga reiciendis libero doloremque distinctio.
+          </td>
+          <td>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+            perferendis nam, fuga reiciendis libero doloremque distinctio.
+          </td>
+        </tr>
+        <tr class="c1">
+          <th>Colors</th>
+          <td class="colorOptions">
+            <span class="color orange"></span>
+            <span class="color red"></span>            
+            <span class="color yellow"></span>
+          </td>
+          <td class="colorOptions">
+            <span class="color orange"></span>
+            <span class="color red"></span>            
+            <span class="color yellow"></span>
+          </td>
+          <td class="colorOptions">
+            <span class="color orange"></span>
+            <span class="color red"></span>            
+            <span class="color yellow"></span>
+          </td>
+        </tr>
+        <tr>
+          <th>Stock</th>
+          <td class="outStock">Out of stock</td>
+          <td class="outStock">Out of stock</td>
+          <td class="outStock">Out of stock</td>
+        </tr>
+        <tr>
+          <th>Weight</th>
+          <td>150 gram</td>
+          <td>150 gram</td>
+          <td>150 gram</td>
+        </tr>
+        <tr>
+          <th>Dimensions</th>
+          <td>N/A</td>
+          <td>N/A</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <th>Buy</th>
+          <td><button class="cartBtn">Add to Cart</button></td>
+          <td><button class="cartBtn">Add to Cart</button></td>
+          <td><button class="cartBtn">Add to Cart</button></td>
+        </tr>
+        <tr>
+          <th>Remove</th>
+          <td>
+            <img
+              src="./Assets/Pictures/Delete.png"
+              alt=""
+              width="15pxx"
+              height="15px"
+            />
+          </td>
+          <td>
+            <img
+              src="./Assets/Pictures/Delete.png"
+              alt=""
+              width="15pxx"
+              height="15px"
+            />
+          </td>
+          <td>
+            <img
+              src="./Assets/Pictures/Delete.png"
+              alt=""
+              width="15pxx"
+              height="15px"
+            />
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="footerHeader">
+      <h2>
+          <img src="./Assets/Pictures/icon-email.svg" alt="email" width="40px" height="40px" style="position: relative; bottom: 3px;" >
+          Sign in to Newsletter
+      </h2>
+      <p>...and receive $25 coupon for first shopping.</p>
+      <div class="footerbtn">
+          <input type="email" placeholder="Enter Your Email">
+          <button>Subscribe</button>
+      </div>
+    </div>
+    <div class="footer " >
+      <div  class="ftimg">
+        <img src="./Assets/Pictures/logo.png" alt=" logoAIt" width="150px" height="45px"  style="margin-bottom: 10px;">
+        <p style="opacity: .5; font-size: 16px;">Contact</p>
+          <p><strong style="color: rgb(80, 77, 77);" >Address:</strong > <span style="opacity: .5;"> 13 Tlemcen Road, Street 32, Beb-Wahren</span> </p>
+          <p><strong style="color: rgb(80, 77, 77);" >Phone:</strong >  <span style="opacity: .5;"> +01 2222 365 /(+91) 01 2345 6789</span></p>
+          <p><strong style="color: rgb(80, 77, 77);"  >Hours:</strong > <span style="opacity: .5;">10:00 - 18:00, Mon - Sat</span></p><br><br>
+          <p style="opacity: 0.5;">Follow Me</p>
+          <div class="social-icons" style="opacity: .7;">
+              <img src="./Assets/Pictures/icon-facebook.svg" alt="Facebook">
+              <img src="./Assets/Pictures/icon-twitter.svg" alt="Twitter">
+              <img src="./Assets/Pictures/icon-instagram.svg" alt="Instagram">
+              <img src="./Assets/Pictures/icon-pinterest.svg" alt="printer">
+              <img src="./Assets/Pictures/icon-youtube.svg" alt="printer">
+    
+          </div>
+      </div>
+      <div class="footerAddress" >
+          <h3>Address</h3>
+          <a href="#">About Us</a>
+          <a href="#">Delivery Information</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Support Center</a>
+      </div>
+      <div class="footerAddress">
+          <h3>My Account</h3>
+          <a href="#">Sign In</a>
+          <a href="#">View Cart</a>
+          <a href="#">My Wishlist</a>
+          <a href="#">Track My Order</a>
+          <a href="#">Help</a>
+          <a href="#">Order</a>
+      </div>
+      <div class="footerGateways">
+          <h3>Secured Payed Gateways</h3>
+          
+              <img src="./Assets/Pictures/payment-method.png" alt="Visa" >
+         
+      </div>
+    </div>
+    <div class="footer-bottom" style="display: flex; justify-content: space-between;">
+      <span>&copy; 2024 SHIVA. All rights reserved </span>   <span>Designer by SHIVA A </span> 
+    </div>
+    
+    
+
+
+  </body>
+</html>
