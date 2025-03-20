@@ -650,19 +650,22 @@ h3 {
 
 .loginHeadre {
      background: #eeeeee; 
-    padding: 15px 30px;
+
+    padding: 20px 64px;
     font-size: 12px;
     height: 60px;
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-  
+   font-size: 14px;
     color:grey;
 }
+
 
 .loginHeadre a {
     text-decoration: none;
     color:grey;
+    
 }
 
 .loginPageContainer {

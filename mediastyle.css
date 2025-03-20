@@ -185,7 +185,12 @@ text-align: left;
 
   }
 
- 
+ .compareContainer{
+
+  
+  width: 400px;
+  height: 100%;
+ }
 
   
 
