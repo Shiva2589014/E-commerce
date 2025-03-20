@@ -1,7 +1,7 @@
 body {
   font-family: Arial, sans-serif;
-  
-  
+overflow-x: hidden;
+/* border: 10px solid; */
 }
 
 * {
@@ -9,6 +9,7 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+body
 .header {
   display: flex;
   flex-direction: row;
@@ -149,6 +150,7 @@ display: none;
   align-items: center;
   position: relative;
   top: 20px;
+  right: 25px;
   color: rgb(0, 105, 92);
   width: 30px;
   height: 30px;
@@ -552,7 +554,7 @@ display: none;
   margin: 0px 35px;
   background: #fff;
   font-size: 18px;
-  width: 100%;
+  
 }
 
 .footer h3 {
