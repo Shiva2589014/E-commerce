@@ -185,12 +185,38 @@ text-align: left;
 
   }
 
- .compareContainer{
+
+
+
+/* Styles for Tablet Screens (481px - 768px) */
+
+  .compareContainer {
+    width: 90%;
+    margin: 30px;
+    overflow-x: auto;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  th,
+  td {
+    font-size: 10px;
+
+    width: 13px;
+  }
+
+  th img {
+    width: 50px;
+    height: 50px;
+  }
 
   
-  width: 400px;
-  height: 100%;
- }
+
+  
+  
+
 
   
 
@@ -499,6 +525,37 @@ font-size: 7px;
    
    width:100px;
 }
+
+
+.compareContainer {
+  width: 90%;
+  margin: 30px;
+  overflow-x: auto;
+}
+
+table {
+  width: 90%;
+}
+
+th,
+td,.cartBtn {
+  font-size: 4px;
+
+  width: 13px;
+}
+.cartBtn {
+  font-size: 10px;
+}
+
+
+
+th img {
+  width: 50px;
+  height: 50px;
+}
+
+
+
 
 
 
